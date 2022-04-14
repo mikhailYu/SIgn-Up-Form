@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styleSignUp.css">
+    
+</head>
+<body>
+    <div class="bodyContainer">
+        <div class="imageContainer">
+            <div class="logo">
+                <img src="./images/odin-lined.png">
+                <p>CityWide</p>
+            </div>
+            <div class="image"><img src="./images/hangingOut.jpg"
+            alt="Existing"></div>
+                <div class="creditFooter"><span>
+                    <a class="linkText" href= https://unsplash.com/photos/UmWEalRVEb0
+                    target="_blank">Image</a> by 
+                    <a class="linkText" href= https://unsplash.com/@edoardo_cuoghi_98
+                    target="_blank">Edoardo Cuoghi
+                    </a>
+                    from 
+                    <a class="linkText" href= https://unsplash.com/
+                    target="_blank">Unsplash</a>              
+                    </span>
+                </div>
+</div>
+<div class="rightContainer">
+<div class="formHeader">
+    <p>Need some time to kill? Sign up today and find the most 
+    uplifting content on this side of the world!</p>
+    <p>This web page is for demonstration purposes only.
+    Please do not input any real personal data.</p> 
+    <p>Cheers! </p>
+</div>
+<div class="formContainer">
+    <fieldset>
+        <legend>Let's do this!</legend>
+    <form action="#" id="signUpForm">
+
+<div> 
+    <p><label for="firstName">FIRST NAME:</label></p>
+    <input type="text" id="firstName" name="firstName" maxlength="25" required>
+</div>
+<div>
+    <p><label for="lastName">LAST NAME:</label></p>
+    <input type="text" id="lastName" name="lastName" maxlength="25" required>
+</div>
+<div>
+    <p><label for="user_email">EMAIL:</label></p>
+    <input type="email" id="user_email" name="user_email" required 
+    title="Please enter a valid email address containing @"
+    pattern="(^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$)"
+    placeholder="example@anything.com">
+</div>
+<div>
+    <p><label for="phone">PHONE NUMBER</label></p>
+    <input type="number" id="phoneNumber" name="phoneNumber" required>
+</div>
+<div>
+    <p><label for="userPassword">PASSWORD:</label></p>
+    <input type="password" id="userPassword" name="password" required maxlength="25">
+    <p class="passwordError">*Passwords do not match</p>
+</div>
+<div>
+    <p><label for="confirmPassword">CONFIRM PASSWORD:</label></p>
+    <input type="password" id="confirmPassword" name="confirmPassword" required maxlength="25">
+</div>
+
+</fieldset>
+  </form>
+</div>
+<div class="createAccContainer">
+    
+    <button type="submit" class="createAcc" form="signUpForm">Create Account</button>
+    
+    <p class="logIn">Already have an account? 
+        <a href="https://www.google.com/"
+         target="_blank">Log In</a>
+        </p>
+</div>
+</div>
+    </div>
+
+
+    <script type="text/javascript" src="scriptSignUp.js"></script>
+</body>
+</html>

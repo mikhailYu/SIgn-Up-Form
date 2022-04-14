@@ -1,0 +1,281 @@
+*
+{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+html 
+{
+    height: 100%;
+}
+  
+body
+{
+    background: rgb(20, 14, 7);
+    min-height: 100%;
+    max-width: 100%;
+    
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url("/Norse-Bold.otf");
+}
+
+.bodyContainer,
+.imageContainer,
+.image,
+.rightContainer,
+.logo,
+.createAccContainer,
+.formDiv1,
+.formDiv2,
+.formContainer
+
+{
+    display: flex;
+}
+
+.bodyContainer
+{
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 80vw;
+}
+
+.imageContainer
+{
+    width: 40%;
+    height: 100vh;
+    flex-direction: column;
+    min-width: 20%;
+    align-content: center;
+    min-height: 50vh;
+    max-width: 40%;
+    
+    
+}
+
+.image
+{
+    width: auto; 
+    max-height: 100%; 
+    min-height: 50%;
+    overflow: hidden;
+}
+
+.rightContainer
+{
+    flex-direction: column;
+    background: rgb(255, 250, 245);
+    max-width: 70%;
+    width: 70%;
+    --padding-left-elements: 3em;
+    
+}
+
+.formContainer
+{
+    height: 30vh;
+    min-height: 30vh;
+
+    background: rgb(255, 255, 255);
+    filter:drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
+    
+
+}
+
+.createAccContainer
+{
+    height: 35vh;
+    max-height: 35vh;
+    flex-direction: column;
+    gap: 2em;
+    padding-left: var(--padding-left-elements);
+    padding-top: 4em;
+    
+}
+.logo
+{
+    position: absolute;
+    top: 18vh;
+    width: 29%;
+    background: rgba(20, 15, 14, 0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 1.1em 0 1.1em 0
+
+}
+.logo>p
+{
+    font-family: Norse-Bold;
+    font-size: 6em;
+    color: white;
+    left: 10vw;
+    
+}
+
+.logo>img
+{
+    width: 7em;
+    min-width: 5em;
+}
+.creditFooter
+{
+    position: absolute;
+    bottom: 1vh;
+    left: 18vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linkText
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.linkText:hover
+{
+    color: rgb(255, 136, 0);
+}
+
+.formHeader
+{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: rgb(68, 60, 55);
+    position: relative;
+    top: 5em;
+    left: 2em;
+    height: 35vh;
+    max-height: 35vh;
+
+}
+
+.formHeader>p+p
+{
+    margin-top: 1.2em;
+}
+
+
+.createAcc
+{
+    background: rgb(221, 133, 60);
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 15px 35px 15px 35px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 11em;
+}
+
+.createAcc:hover
+{
+    background: rgb(241, 113, 7);
+}
+
+.logIn
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logIn>a
+{
+    color: rgb(187, 84, 0);
+}
+
+.logIn>a:hover
+{
+    color: rgb(255, 136, 40);
+}
+
+
+
+/* form css */
+
+fieldset
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(53, 39, 38);
+
+}
+
+input
+{
+    border-radius: 3px;
+    border: rgb(207, 204, 202) solid 1px;
+    height: 30px;
+    width: 15em;
+    background: rgb(255, 255, 255);
+    font-weight: lighter;
+}
+
+input:focus
+{
+    border: rgb(0, 17, 255) solid 1px;
+    filter:drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
+}
+
+#signUpForm
+{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+#signUpForm> div {
+	width: 40%;
+	min-width: 150px;
+	margin-bottom: 20px;
+    
+}
+
+legend
+{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.formContainer>*
+{
+    padding-left: var(--padding-left-elements);
+}
+
+.passwordError
+{
+    font-weight: lighter;
+    font-size: 12px;
+    color: rgb(255, 38, 0);
+}
+
+
+
+
